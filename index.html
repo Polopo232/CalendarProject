@@ -1,50 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="et">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Microsoft Calendar</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juhend: Kalender MS Projectis</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <h1>📅 Microsoft Calendar</h1>
-  </header>
+    <header>
+        <div class="header-tag">Microsoft Project</div>
+        <h1>Kuidas luua uus kalender MS Projectis</h1>
+        <p class="author">Autor: [Sinu Nimi]</p>
+    </header>
 
-  <main>
-    <section>
-      <h2>What is Microsoft Calendar?</h2>
-      <p>
-        Microsoft Calendar is a built-in calendar app included with Microsoft products
-        like <strong>Outlook</strong> and <strong>Microsoft 365</strong>. It helps you
-        organize your schedule, set reminders, and manage meetings.
-      </p>
-    </section>
+    <main>
 
-    <section>
-      <h2>Key Features</h2>
-      <ul>
-        <li>Create and manage events & meetings</li>
-        <li>Set reminders and notifications</li>
-        <li>Share calendars with others</li>
-        <li>Sync across all your devices</li>
-        <li>Integrates with Teams, Outlook and more</li>
-      </ul>
-    </section>
+        <section>
+            <div class="step-num">01</div>
+            <div class="step-content">
+                <h2>Uue kalendri loomine</h2>
+                <p>Ava vahekaart <strong>Project</strong> ja vali <strong>Change Working Time</strong>. Klõpsa <em>Create New Calendar</em>, anna sellele nimi ning vali aluseks <em>Standard</em>.</p>
+                <img src="img1.png" alt="Kalendri loomine">
+            </div>
+        </section>
 
-    <section>
-      <h2>Where to find it?</h2>
-      <p>
-        You can access Microsoft Calendar through <strong>Outlook</strong> (web, desktop or mobile),
-        or directly at <a href="https://calendar.live.com" target="_blank">calendar.live.com</a>.
-      </p>
-    </section>
-  </main>
+        <section>
+            <div class="step-num">02</div>
+            <div class="step-content">
+                <h2>Tööaja ja erandite seadistamine</h2>
+                <p>Vahekaardil <strong>Work Weeks</strong> saad määrata töögraafiku (nt E–R). Vahekaardil <strong>Exceptions</strong> lisa pühad, mil tööd ei tehta.</p>
+                <img src="img2.png" alt="Tööaja seadistamine">
+            </div>
+        </section>
 
-  <footer>
-    <p>Microsoft Calendar — part of Microsoft 365</p>
-  </footer>
+        <section>
+            <div class="step-num">03</div>
+            <div class="step-content">
+                <h2>Kalendri rakendamine projektile</h2>
+                <p>Ava <strong>Project Information</strong> ja vali väljal <em>Calendar</em> just loodud kalender. Nüüd arvestab projekt sinu töögraafikuga.</p>
+                <img src="img3.png" alt="Kalendri rakendamine">
+            </div>
+        </section>
+
+        <section class="summary">
+            <h2>Mõju projekti ajakavale</h2>
+            <p>Kalender mõjutab otseselt ülesannete kestust. Kui lisad vaba päeva (<em>Exception</em>), nihutab MS Project kõik ülesanded automaatselt järgmisele tööpäevale — projekti lõppkuupäev muutub vastavalt.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Õppeprojekt &copy; 2026</p>
+    </footer>
 
 </body>
 </html>
