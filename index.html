@@ -4,367 +4,47 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Microsoft Calendar</title>
-  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- TOPBAR -->
-  <header class="topbar">
-    <a class="topbar-logo" href="#">
-      <div class="ms-squares">
-        <span></span><span></span><span></span><span></span>
-      </div>
-      <div class="topbar-logo-text">Microsoft <span>Calendar</span></div>
-    </a>
-    <div class="topbar-divider"></div>
-    <button class="nav-btn">
-      <svg viewBox="0 0 16 16" fill="currentColor"><path d="M1 3h14v1H1V3zm0 4h14v1H1V7zm0 4h14v1H1v-1z"/></svg>
-    </button>
-    <div class="topbar-spacer"></div>
-    <button class="nav-btn">
-      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="7" cy="7" r="5"/><path d="M11 11l3 3"/></svg>
-      Search
-    </button>
-    <button class="nav-btn">
-      <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 1a5 5 0 00-5 5v2.5l-1.4 2.1A1 1 0 002.5 12h3a2.5 2.5 0 005 0h3a1 1 0 00.9-1.4L13 8.5V6a5 5 0 00-5-5zm0 13a1.5 1.5 0 01-1.5-1.5h3A1.5 1.5 0 018 14z"/></svg>
-    </button>
-    <div class="avatar" title="My Account">AS</div>
+  <header>
+    <h1>📅 Microsoft Calendar</h1>
   </header>
 
-  <!-- LAYOUT -->
-  <div class="layout">
+  <main>
+    <section>
+      <h2>What is Microsoft Calendar?</h2>
+      <p>
+        Microsoft Calendar is a built-in calendar app included with Microsoft products
+        like <strong>Outlook</strong> and <strong>Microsoft 365</strong>. It helps you
+        organize your schedule, set reminders, and manage meetings.
+      </p>
+    </section>
 
-    <!-- SIDEBAR -->
-    <aside class="sidebar">
-      <button class="new-event-btn" id="openModal">
-        <svg viewBox="0 0 14 14" fill="currentColor"><path d="M7.5 1h-1v5.5H1v1h5.5V13h1V7.5H13v-1H7.5z"/></svg>
-        New event
-      </button>
+    <section>
+      <h2>Key Features</h2>
+      <ul>
+        <li>Create and manage events & meetings</li>
+        <li>Set reminders and notifications</li>
+        <li>Share calendars with others</li>
+        <li>Sync across all your devices</li>
+        <li>Integrates with Teams, Outlook and more</li>
+      </ul>
+    </section>
 
-      <!-- Mini Calendar -->
-      <div class="mini-cal">
-        <div class="mini-cal-header">
-          <span class="mini-cal-title" id="miniMonthLabel"></span>
-          <div style="display:flex;gap:2px;">
-            <button class="mini-nav" id="miniPrev">
-              <svg viewBox="0 0 16 16" fill="currentColor"><path d="M10 3L5 8l5 5V3z"/></svg>
-            </button>
-            <button class="mini-nav" id="miniNext">
-              <svg viewBox="0 0 16 16" fill="currentColor"><path d="M6 3l5 5-5 5V3z"/></svg>
-            </button>
-          </div>
-        </div>
-        <div class="mini-grid" id="miniGrid"></div>
-      </div>
+    <section>
+      <h2>Where to find it?</h2>
+      <p>
+        You can access Microsoft Calendar through <strong>Outlook</strong> (web, desktop or mobile),
+        or directly at <a href="https://calendar.live.com" target="_blank">calendar.live.com</a>.
+      </p>
+    </section>
+  </main>
 
-      <!-- My Calendars -->
-      <div class="sidebar-section">
-        <div class="sidebar-section-header">
-          <span class="sidebar-section-title">My Calendars</span>
-          <span class="sidebar-section-toggle">
-            <svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4H2z"/></svg>
-          </span>
-        </div>
-        <div class="calendar-item">
-          <div class="cal-dot" style="background:#0078d4;"></div>
-          <span>Alex Smith</span>
-        </div>
-        <div class="calendar-item">
-          <div class="cal-dot" style="background:#107c10;"></div>
-          <span>Work</span>
-        </div>
-        <div class="calendar-item">
-          <div class="cal-dot" style="background:#ca5010;"></div>
-          <span>Personal</span>
-        </div>
-        <div class="calendar-item">
-          <div class="cal-dot" style="background:#5c2d91;"></div>
-          <span>Birthdays</span>
-        </div>
-      </div>
+  <footer>
+    <p>Microsoft Calendar — part of Microsoft 365</p>
+  </footer>
 
-      <!-- Other Calendars -->
-      <div class="sidebar-section">
-        <div class="sidebar-section-header">
-          <span class="sidebar-section-title">Other Calendars</span>
-          <span class="sidebar-section-toggle">
-            <svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4H2z"/></svg>
-          </span>
-        </div>
-        <div class="calendar-item">
-          <div class="cal-dot" style="background:#008272;"></div>
-          <span>Holidays</span>
-        </div>
-      </div>
-    </aside>
-
-    <!-- MAIN -->
-    <main class="main">
-      <!-- View Toolbar -->
-      <div class="view-toolbar">
-        <button class="today-btn" id="todayBtn">Today</button>
-        <button class="arrow-btn" id="prevMonth">
-          <svg viewBox="0 0 16 16" fill="currentColor"><path d="M10 3L5 8l5 5V3z"/></svg>
-        </button>
-        <button class="arrow-btn" id="nextMonth">
-          <svg viewBox="0 0 16 16" fill="currentColor"><path d="M6 3l5 5-5 5V3z"/></svg>
-        </button>
-        <span class="current-month-label" id="monthLabel"></span>
-        <div class="toolbar-spacer"></div>
-        <div class="view-switcher">
-          <button class="view-switch-btn">Day</button>
-          <button class="view-switch-btn">Week</button>
-          <button class="view-switch-btn active">Month</button>
-          <button class="view-switch-btn">Year</button>
-        </div>
-      </div>
-
-      <!-- Calendar Grid -->
-      <div class="cal-grid-wrapper">
-        <div class="cal-grid" id="calGrid"></div>
-      </div>
-    </main>
-  </div>
-
-  <!-- NEW EVENT MODAL -->
-  <div class="modal-overlay" id="modalOverlay">
-    <div class="modal">
-      <div class="modal-title">New Event</div>
-      <div class="modal-field">
-        <label>Title</label>
-        <input type="text" id="eventTitle" placeholder="Add a title" />
-      </div>
-      <div class="modal-row">
-        <div class="modal-field">
-          <label>Date</label>
-          <input type="date" id="eventDate" />
-        </div>
-        <div class="modal-field">
-          <label>Time</label>
-          <input type="time" id="eventTime" />
-        </div>
-      </div>
-      <div class="modal-field">
-        <label>Calendar</label>
-        <select id="eventCal">
-          <option value="#0078d4">Alex Smith</option>
-          <option value="#107c10">Work</option>
-          <option value="#ca5010">Personal</option>
-          <option value="#5c2d91">Birthdays</option>
-        </select>
-      </div>
-      <div class="modal-actions">
-        <button class="btn-cancel" id="closeModal">Cancel</button>
-        <button class="btn-save" id="saveEvent">Save</button>
-      </div>
-    </div>
-  </div>
-
-  <script>
-    const DAY_NAMES = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
-    const MONTH_NAMES = ['January','February','March','April','May','June',
-                         'July','August','September','October','November','December'];
-
-    const today = new Date();
-    let viewDate = new Date(today.getFullYear(), today.getMonth(), 1);
-
-    let events = [
-      { date: fmt(today), title: 'Team Standup', color: '#107c10', time: '09:00' },
-      { date: fmt(today), title: 'Lunch with Sarah', color: '#ca5010', time: '12:30' },
-      { date: fmt(offset(2)), title: 'Sprint Planning', color: '#0078d4', time: '10:00' },
-      { date: fmt(offset(5)), title: "Dad's Birthday 🎂", color: '#5c2d91', time: '' },
-      { date: fmt(offset(-1)), title: 'Design Review', color: '#0078d4', time: '14:00' },
-      { date: fmt(offset(10)), title: 'Q2 Planning', color: '#107c10', time: '09:00' },
-      { date: fmt(offset(10)), title: 'Doctor Appointment', color: '#ca5010', time: '15:30' },
-      { date: fmt(offset(10)), title: 'Gym Session', color: '#0078d4', time: '07:00' },
-      { date: fmt(offset(10)), title: 'Team Dinner', color: '#5c2d91', time: '19:00' },
-    ];
-
-    function fmt(d) {
-      return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
-    }
-
-    function offset(days) {
-      const d = new Date(today);
-      d.setDate(d.getDate() + days);
-      return d;
-    }
-
-    function renderGrid() {
-      const grid = document.getElementById('calGrid');
-      grid.innerHTML = '';
-
-      const year = viewDate.getFullYear();
-      const month = viewDate.getMonth();
-      document.getElementById('monthLabel').textContent = `${MONTH_NAMES[month]} ${year}`;
-
-      DAY_NAMES.forEach(d => {
-        const el = document.createElement('div');
-        el.className = 'day-name-cell';
-        el.textContent = d;
-        grid.appendChild(el);
-      });
-
-      const firstDay = new Date(year, month, 1).getDay();
-      const daysInMonth = new Date(year, month + 1, 0).getDate();
-      const daysInPrev = new Date(year, month, 0).getDate();
-      const totalCells = Math.ceil((firstDay + daysInMonth) / 7) * 7;
-
-      for (let i = 0; i < totalCells; i++) {
-        let day, cellDate, isOther = false;
-
-        if (i < firstDay) {
-          day = daysInPrev - firstDay + i + 1;
-          cellDate = new Date(year, month - 1, day);
-          isOther = true;
-        } else if (i >= firstDay + daysInMonth) {
-          day = i - firstDay - daysInMonth + 1;
-          cellDate = new Date(year, month + 1, day);
-          isOther = true;
-        } else {
-          day = i - firstDay + 1;
-          cellDate = new Date(year, month, day);
-        }
-
-        const dateStr = fmt(cellDate);
-        const isToday = dateStr === fmt(today);
-        const cell = document.createElement('div');
-        cell.className = 'cal-cell' + (isOther ? ' other-month' : '') + (isToday ? ' today' : '');
-        cell.dataset.date = dateStr;
-
-        const numEl = document.createElement('div');
-        numEl.className = 'cell-num';
-        numEl.textContent = day;
-        cell.appendChild(numEl);
-
-        const dayEvents = events.filter(e => e.date === dateStr);
-        const maxShow = 3;
-        dayEvents.slice(0, maxShow).forEach(ev => {
-          const pill = document.createElement('div');
-          pill.className = 'event-pill';
-          pill.style.background = ev.color;
-          pill.innerHTML = `<span class="event-dot"></span>${ev.time ? ev.time + ' ' : ''}${ev.title}`;
-          cell.appendChild(pill);
-        });
-
-        if (dayEvents.length > maxShow) {
-          const more = document.createElement('div');
-          more.className = 'more-events';
-          more.textContent = `+${dayEvents.length - maxShow} more`;
-          cell.appendChild(more);
-        }
-
-        cell.addEventListener('click', (e) => {
-          if (!e.target.classList.contains('event-pill')) {
-            document.getElementById('eventDate').value = dateStr;
-            openModal();
-          }
-        });
-
-        grid.appendChild(cell);
-      }
-    }
-
-    function renderMini() {
-      const year = viewDate.getFullYear();
-      const month = viewDate.getMonth();
-      document.getElementById('miniMonthLabel').textContent = `${MONTH_NAMES[month].slice(0,3)} ${year}`;
-
-      const grid = document.getElementById('miniGrid');
-      grid.innerHTML = '';
-
-      DAY_NAMES.forEach(d => {
-        const el = document.createElement('div');
-        el.className = 'mini-day-name';
-        el.textContent = d.charAt(0);
-        grid.appendChild(el);
-      });
-
-      const firstDay = new Date(year, month, 1).getDay();
-      const daysInMonth = new Date(year, month + 1, 0).getDate();
-      const daysInPrev = new Date(year, month, 0).getDate();
-      const totalCells = Math.ceil((firstDay + daysInMonth) / 7) * 7;
-
-      for (let i = 0; i < totalCells; i++) {
-        let day, isOther = false, dateStr;
-        if (i < firstDay) {
-          day = daysInPrev - firstDay + i + 1;
-          dateStr = fmt(new Date(year, month - 1, day));
-          isOther = true;
-        } else if (i >= firstDay + daysInMonth) {
-          day = i - firstDay - daysInMonth + 1;
-          dateStr = fmt(new Date(year, month + 1, day));
-          isOther = true;
-        } else {
-          day = i - firstDay + 1;
-          dateStr = fmt(new Date(year, month, day));
-        }
-
-        const el = document.createElement('div');
-        el.className = 'mini-day' + (isOther ? ' other-month' : '');
-        if (dateStr === fmt(today)) el.classList.add('today');
-        el.textContent = day;
-        grid.appendChild(el);
-      }
-    }
-
-    document.getElementById('prevMonth').addEventListener('click', () => {
-      viewDate.setMonth(viewDate.getMonth() - 1); renderGrid(); renderMini();
-    });
-    document.getElementById('nextMonth').addEventListener('click', () => {
-      viewDate.setMonth(viewDate.getMonth() + 1); renderGrid(); renderMini();
-    });
-    document.getElementById('miniPrev').addEventListener('click', () => {
-      viewDate.setMonth(viewDate.getMonth() - 1); renderGrid(); renderMini();
-    });
-    document.getElementById('miniNext').addEventListener('click', () => {
-      viewDate.setMonth(viewDate.getMonth() + 1); renderGrid(); renderMini();
-    });
-    document.getElementById('todayBtn').addEventListener('click', () => {
-      viewDate = new Date(today.getFullYear(), today.getMonth(), 1);
-      renderGrid(); renderMini();
-    });
-
-    function openModal() {
-      document.getElementById('modalOverlay').classList.add('open');
-      document.getElementById('eventTitle').focus();
-    }
-
-    function closeModal() {
-      document.getElementById('modalOverlay').classList.remove('open');
-      document.getElementById('eventTitle').value = '';
-      document.getElementById('eventTime').value = '';
-    }
-
-    document.getElementById('openModal').addEventListener('click', () => {
-      document.getElementById('eventDate').value = fmt(today);
-      openModal();
-    });
-    document.getElementById('closeModal').addEventListener('click', closeModal);
-    document.getElementById('modalOverlay').addEventListener('click', e => {
-      if (e.target === document.getElementById('modalOverlay')) closeModal();
-    });
-    document.getElementById('saveEvent').addEventListener('click', () => {
-      const title = document.getElementById('eventTitle').value.trim();
-      const date = document.getElementById('eventDate').value;
-      const time = document.getElementById('eventTime').value;
-      const color = document.getElementById('eventCal').value;
-      if (!title || !date) return;
-      events.push({ date, title, color, time });
-      renderGrid();
-      closeModal();
-    });
-
-    document.querySelectorAll('.view-switch-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        document.querySelectorAll('.view-switch-btn').forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-      });
-    });
-
-    renderGrid();
-    renderMini();
-  </script>
 </body>
 </html>
