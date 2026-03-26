@@ -23,7 +23,39 @@ body {
     min-height: 100vh;
 }
 
-/* HEADER */
+/* ── NAV ── */
+nav {
+    background: #fff;
+    border-bottom: 1px solid var(--border);
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+nav a {
+    display: inline-block;
+    padding: 14px 16px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--muted);
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: color 0.15s, border-color 0.15s;
+    white-space: nowrap;
+}
+
+nav a:hover {
+    color: var(--blue);
+}
+
+nav a.active {
+    color: var(--blue);
+    border-bottom-color: var(--blue);
+    font-weight: 600;
+}
+
+/* ── HEADER ── */
 header {
     background: var(--dark);
     color: #fff;
@@ -72,7 +104,7 @@ header h1 {
     font-size: 30px;
     font-weight: 800;
     line-height: 1.25;
-    max-width: 540px;
+    max-width: 600px;
     position: relative;
     z-index: 1;
 }
@@ -85,14 +117,14 @@ header h1 {
     z-index: 1;
 }
 
-/* MAIN */
+/* ── MAIN ── */
 main {
     max-width: 860px;
     margin: 0 auto;
     padding: 40px 24px 60px;
 }
 
-/* STEP SECTIONS */
+/* ── SECTIONS ── */
 section {
     display: flex;
     gap: 20px;
@@ -161,6 +193,7 @@ em {
     font-weight: 500;
 }
 
+/* ── IMAGE BOX ── */
 .img-box {
     margin-top: 16px;
     background: var(--bg);
@@ -177,12 +210,12 @@ em {
     border-radius: 4px;
 }
 
-/* SUMMARY */
+/* ── SUMMARY ── */
 .summary h2 {
     margin-bottom: 10px;
 }
 
-/* FOOTER */
+/* ── FOOTER ── */
 footer {
     text-align: center;
     padding: 20px;
