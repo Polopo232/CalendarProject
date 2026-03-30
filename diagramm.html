@@ -3,19 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Diagrammid – MS Project juhend</title>
+  <title>Diagrammid – ProjectLibre juhend</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <nav>
   <a href="index.html">📅 PL Kalender</a>
-  <a href="valem.html" >🔢 PL Veerud</a>
+  <a href="valem.html">🔢 PL Veerud</a>
   <a href="diagramm.html" class="active">📊 PL Diagrammid</a>
 </nav>
+
 <header>
-  <div class="header-tag">Microsoft Project</div>
-  <h1>Diagrammide loomine MS Projectis</h1>
+  <div class="header-tag">ProjectLibre</div>
+  <h1>Diagrammide ja vaadete valimine</h1>
 </header>
 
 <main>
@@ -23,35 +24,33 @@
   <section>
     <div class="step-num">01</div>
     <div class="step-content">
-      <h2>Aruande valimine</h2>
-      <p>Ava vahekaart <strong>Report</strong> ja klõpsa <strong>New Report</strong>. Vali sobiv aruande tüüp: <em>Blank</em>, <em>Chart</em>, <em>Table</em> või <em>Comparison</em>. Anna aruandele nimi.</p>
-      <div class="img-box"><img src="img/diagramm1.png" alt="Aruande valimine"></div>
+      <h2>Vaate valimine menüüst Task</h2>
+      <p>Erinevate diagrammide vahel lülitumiseks ava vahekaart <strong>Task</strong>. Vasakul servas näed nuppe, mis võimaldavad valida sobiva visualiseerimise viisi: <em>Gantt</em>, <em>Network</em> või <em>WBS</em>.</p>
+      <div class="img-box"><img src="img/pldiagramm1.png" alt="Task menüü valikud"></div>
     </div>
   </section>
 
   <section>
     <div class="step-num">02</div>
     <div class="step-content">
-      <h2>Diagrammi andmete seadistamine</h2>
-      <p>Klõpsa diagrammil — paremal avaneb <strong>Field List</strong> paneel. Vali, milliseid andmeid soovid kuvada (nt <em>Cost</em>, <em>Work</em>, <em>% Complete</em>). Saad muuta ka diagrammi tüüpi (tulp, joon, sektor).</p>
-      <div class="img-box"><img src="img/diagramm2.png" alt="Andmete seadistamine"></div>
+      <h2>Network diagramm (Võrkdiagramm)</h2>
+      <p>Nii näeb välja <strong>Network</strong> diagramm. See on loogiline skeem, mis keskendub ülesannete vahelistele seostele ja järjekorrale. Iga kast tähistab ülesannet ning nooled näitavad, milline töö peab eelnema järgmisele.</p>
+      <div class="img-box"><img src="img/pldiagramm2.png" alt="Network diagramm"></div>
     </div>
   </section>
 
   <section>
     <div class="step-num">03</div>
     <div class="step-content">
-      <h2>Diagrammi kujundamine ja eksportimine</h2>
-      <p>Kasuta <strong>Design</strong> ja <strong>Format</strong> vahekaarte diagrammi visuaalse välimuse muutmiseks. Aruande saab eksportida PDF-ina: <em>File</em> → <strong>Export</strong> → <em>Create PDF/XPS Document</em>.</p>
-      <div class="img-box"><img src="img/diagramm3.png" alt="Diagrammi eksport"></div>
+      <h2>Kriitilise tee visualiseerimine</h2>
+      <p>Network diagrammil muutuvad <strong>kriitilise tee</strong> ülesanded tavaliselt punaseks. See aitab projektijuhil koheselt näha, millised tegevused on ajakriitilised ja mille viibimine lükkab edasi kogu projekti lõppkuupäeva.</p>
+      <div class="img-box"><img src="img/pldiagramm3.png" alt="Kriitiline tee"></div>
     </div>
   </section>
 
   <section class="summary">
-    <h2>Miks kasutada diagramme?</h2>
-    <p>Visuaalsed aruanded aitavad projekti edenemist kiiresti hinnata ja tulemusi meeskonnale või juhtkonnale selgelt esitada. MS Project pakub mitmeid eelnevalt seadistatud aruandeid, mida saab kohe kasutada.</p>
-    <br><p>Kuidas näeb välja täielik tabel koos diagrammidega:</p>
-    <div class="img-box"><img src="img/diagramm4.png" alt="Full diagramm"></div>
+    <h2>Miks on Network diagramm kasulik?</h2>
+    <p>Erinevalt Gantti tabelist eemaldab Network vaade ajaskaala ja keskendub puhtalt loogikale. See on parim viis keeruliste seoste kontrollimiseks ja veendumiseks, et projekti ülesehitus on korrektne.</p>
   </section>
 
 </main>
