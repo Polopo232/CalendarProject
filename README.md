@@ -59,7 +59,6 @@ Näide sellest, kuidas HTML-is on struktureeritud samm-sammuline juhend:
 
 Siin on näited projekti visuaalsest poolest:
 
-![Uploading {3F4A7D9F-6B38-4931-9CB2-A33919482A38}.png…]()
-
+<img width="1914" height="950" alt="{3F4A7D9F-6B38-4931-9CB2-A33919482A38}" src="https://github.com/user-attachments/assets/725288aa-270a-419d-8e53-e9b63fbb0631" />
 
 -----
