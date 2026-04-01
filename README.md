@@ -27,14 +27,14 @@ See haru keskendub vabavaralise projektijuhtimistarkvara **ProjectLibre** juhend
 
 ## ✨ Funktsionaalsused
 Projektis lisati järgmised juhendmaterjalid ja tehnilised lahendused:
-* **Kalendri haldus:** Uue kalendri loomine ja erandite (pühade) märkimine [^1].
+* **Kalendri haldus:** Uue kalendri loomine ja erandite (pühade) märkimine.
 * **Visualiseerimine:** Võrkdiagrammi abil kriitilise tee tuvastamine.
 * **Navigatsioon:** Interaktiivne menüü lehtede vahel liikumiseks.
 
-> [!TIP]
+> [!NIPI]
 > ProjectLibre on suurepärane tasuta alternatiiv MS Projectile, kui vajate põhilisi planeerimistööriistu.
 
-> [!WARNING]
+> [!HOIATUS]
 > Kalendri muudatused mõjutavad automaatselt kogu projekti lõppkuupäeva.
 
 ---
