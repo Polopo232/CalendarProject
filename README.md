@@ -7,6 +7,7 @@ See haru keskendub vabavaralise projektijuhtimistarkvara **ProjectLibre** juhend
 2. [Muudetud failid](#-muudetud-failid)
 3. [Funktsionaalsused](#-funktsionaalsused)
 4. [Koodinäide](#-koodinäide)
+5. [Ekraanitõmmised](#-ekraanitõmmised)
 
 ---
 
@@ -40,13 +41,25 @@ Projektis lisati järgmised juhendmaterjalid ja tehnilised lahendused:
 
 ## 💻 Koodinäide
 Näide sellest, kuidas HTML-is on struktureeritud samm-sammuline juhend:
+
 ```html
-  <section>
-    <div class="step-num">01</div>
-    <div class="step-content">
-      <h2>Uue kalendri loomine</h2>
-      <p>Kalendri seadistamiseks vajutame ülemises menüüs nuppu <strong>Task</strong> ja seejärel valime <strong>Calendars</strong>. Avanevas aknas vajutame nuppu <strong>New</strong>, et luua uus kalender, ning sisestame sellele sobiva nime.</p>
-      <div class="img-box"><img src="img/plimg1.png" alt="Kalendri loomine ProjectLibre'is"></div>
-    </div>
-  </section>
-```
+<section>
+  <div class="step-num">01</div>
+  <div class="step-content">
+    <h2>Uue kalendri loomine</h2>
+    <p>Kalendri seadistamiseks vajutame ülemises menüüs nuppu <strong>Task</strong> ja seejärel valime <strong>Calendars</strong>.</p>
+    <div class="img-box"><img src="img/plimg1.png" alt="Kalendri loomine"></div>
+  </div>
+</section>
+````
+
+-----
+
+## 🖼️ Ekraanitõmmised
+
+Siin on näited projekti visuaalsest poolest:
+
+![Uploading {3F4A7D9F-6B38-4931-9CB2-A33919482A38}.png…]()
+
+
+-----
