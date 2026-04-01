@@ -22,10 +22,14 @@ See projekt on loodud eesmärgiga pakkuda selgeid ja samm-sammulisi juhiseid pro
 | Branch | Sisu kirjeldus |
 | :--- | :--- |
 | `main` | Projekti koondvaade ja pealeht. |
-| `kalender-branch` | MS Project: kalendri seadistamine ja erandid. |
-| `valem-branch` | MS Project: kohandatud arvutusväljad ja valemid. |
-| `diagramm-branch` | MS Project: aruannete ja diagrammide loomine. |
 | `projectlibre-branch` | ProjectLibre: tarkvara erisused ja võrkdiagramm. |
+
+## 📂 Failide struktuur
+| Fail | Sisu kirjeldus |
+| :--- | :--- |
+| `index` | MS Project: kalendri seadistamine ja erandid. |
+| `valem` | MS Project: kohandatud arvutusväljad ja valemid. |
+| `diagramm` | MS Project: aruannete ja diagrammide loomine. |
 
 ## ✨ Funktsionaalsused
 Projekt ühendab endas järgmised tehnilised lahendused:
