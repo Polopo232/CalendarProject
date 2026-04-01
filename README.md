@@ -3,10 +3,12 @@
 See projekt on loodud eesmärgiga pakkuda selgeid ja samm-sammulisi juhiseid projektijuhtimise tarkvarade kasutamiseks. Veebileht koondab nii **Microsoft Projecti** kui ka **ProjectLibre** peamised funktsioonid.
 
 ## 📑 Sisukord
-1. [Projekti ülevaade](#-projekti-ülevaade)
+1. [Tehtud tööd](#-tehtud-tööd)
 2. [Branchide struktuur](#-branchide-struktuur)
-3. [Kasutatud tehnoloogiad](#-kasutatud-tehnoloogiad)
-4. [Koodinäide (Navigatsioon)](#-koodinäide)
+3. [Failide struktuur](#-failide-struktuur)
+4. [Funktsionaalsused](#-funktsionaalsused)
+5. [Koodinäide](#-koodinäide)
+6. [Ekraanitõmmised](#-ekraanitõmmised)
 
 ---
 
@@ -56,3 +58,10 @@ Näide ühisest navigatsioonimenüüst, mis seob kõik lehed tervikuks:
   <a href="valem.html">🔢 Arvutusvälja lisamine</a>
   <a href="diagramm.html">📊 Diagrammide loomine</a>
 </nav>
+```
+
+## 🖼️ Ekraanitõmmised
+
+Siin on näited projekti visuaalsest poolest:
+
+<img width="1920" height="946" alt="{D6DD9752-67CB-4BD0-8D3C-EF30CFAB3752}" src="https://github.com/user-attachments/assets/dda4589d-f45a-4e21-b881-eeb13d8bac0e" />
