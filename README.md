@@ -40,7 +40,7 @@ Projektis lisati järgmised juhendmaterjalid ja tehnilised lahendused:
 
 ## 💻 Koodinäide
 Näide sellest, kuidas HTML-is on struktureeritud samm-sammuline juhend:
-```
+```html
   <section>
     <div class="step-num">01</div>
     <div class="step-content">
