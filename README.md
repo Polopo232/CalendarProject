@@ -25,11 +25,13 @@ See projekt on loodud eesmärgiga pakkuda selgeid ja samm-sammulisi juhiseid pro
 | `projectlibre-branch` | ProjectLibre: tarkvara erisused ja võrkdiagramm. |
 
 ## 📂 Failide struktuur
+
 | Fail | Sisu kirjeldus |
 | :--- | :--- |
-| `index` | MS Project: kalendri seadistamine ja erandid. |
-| `valem` | MS Project: kohandatud arvutusväljad ja valemid. |
-| `diagramm` | MS Project: aruannete ja diagrammide loomine. |
+| `index.html` | Projekti avaleht ja MS Projecti kalendri seadistamise juhend. |
+| `valem.html` | MS Projecti kohandatud arvutusväljade ja valemite õpetus. |
+| `diagramm.html` | MS Projecti aruannete ja visuaalsete diagrammide loomise juhend. |
+| `style.css` | Ühtne disainilahendus, mis juhib kogu veebilehe visuaalset stiili. |
 
 ## ✨ Funktsionaalsused
 Projekt ühendab endas järgmised tehnilised lahendused:
