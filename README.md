@@ -31,10 +31,10 @@ Projektis lisati järgmised juhendmaterjalid ja tehnilised lahendused:
 * **Visualiseerimine:** Võrkdiagrammi abil kriitilise tee tuvastamine.
 * **Navigatsioon:** Interaktiivne menüü lehtede vahel liikumiseks.
 
-> [!NIPI]
+> [!TIP]
 > ProjectLibre on suurepärane tasuta alternatiiv MS Projectile, kui vajate põhilisi planeerimistööriistu.
 
-> [!HOIATUS]
+> [!WARNING]
 > Kalendri muudatused mõjutavad automaatselt kogu projekti lõppkuupäeva.
 
 ---
